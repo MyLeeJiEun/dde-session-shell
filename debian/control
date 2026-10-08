@@ -70,17 +70,3 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: deepin desktop-environment - dde-session-shell module development files
  DDE Session Shell module development files of deepin desktop-environment
 
-Package: dde-gesture-login
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${dist:Depends},
- deepin-desktop-schemas (>=5.9.14),
- dde-daemon (>=5.13.12),
- startdde (>=5.10.24),
- deepin-authenticate(>=1.2.27),
- libssl-dev,
- dde-dconfig-daemon,
- dde-wayland-config(>>1.0.10-1)
-Conflicts: dss-gesture-login-plugin
-Description: deepin desktop-environment - dde-session-shell login plugin files
- reset-pattern-dialog - modify gesture password enrolled, or create new gesture password
- liblogin-gesture.so - support gesture password login on greeter and lock
